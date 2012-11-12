@@ -1,5 +1,5 @@
 {
-    "name": "Bf/JqGrid",
+    "name": "bf/jqgrid",
     "description": "An implementation for JqGrid for ZF2. Included wokring CRUD module.",
     "type": "library",
     "keywords": [
