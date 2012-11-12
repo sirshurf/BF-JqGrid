@@ -1,6 +1,6 @@
 <?php
 
-namespace Bf\JqGrid\JqGrid\Adapter\Sql\Predicate;
+namespace BfJqGrid\JqGrid\Adapter\Sql\Predicate;
 
 class NotBeginsWith extends NotLike
 {

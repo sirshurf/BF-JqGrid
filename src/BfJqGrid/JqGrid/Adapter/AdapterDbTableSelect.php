@@ -1,12 +1,12 @@
 <?php
 
-namespace Bf\JqGrid\JqGrid\Adapter;
+namespace BfJqGrid\JqGrid\Adapter;
 
 use Zend\Db\Sql\Where;
 use Zend\InputFilter\InputFilter;
 use Zend\Db\Metadata\Metadata;
 use Zend\Json\Encoder;
-use Bf\JqGrid\JqGrid\JqGrid;
+use BfJqGrid\JqGrid\JqGrid;
 use Zend\Db\RowGateway\RowGateway;
 use Zend\Db\Sql\Sql;
 use Zend\Http\Request;

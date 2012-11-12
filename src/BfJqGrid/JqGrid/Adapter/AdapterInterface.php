@@ -1,8 +1,8 @@
 <?php
 
-namespace Bf\JqGrid\JqGrid\Adapter;
+namespace BfJqGrid\JqGrid\Adapter;
 
-use Bf\JqGrid\JqGrid;
+use BfJqGrid\JqGrid;
 
 
 /**

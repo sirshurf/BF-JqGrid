@@ -1,12 +1,12 @@
 <?php
 
-namespace Bf\JqGrid\JqGrid\Plugin;
+namespace BfJqGrid\JqGrid\Plugin;
 
 use Zend\Json\Expr;
 
 use Zend\View\Helper\ViewModel;
 use Zend\Json;
-use Bf\JqGrid\JqGrid\JqGrid;
+use BfJqGrid\JqGrid\JqGrid;
 
 /**
  * Plugin Abstract

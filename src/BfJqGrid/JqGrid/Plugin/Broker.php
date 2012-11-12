@@ -1,8 +1,8 @@
 <?php
 
-namespace Bf\JqGrid\JqGrid\Plugin;
+namespace BfJqGrid\JqGrid\Plugin;
 
-use Bf\JqGrid\JqGrid;
+use BfJqGrid\JqGrid;
 
 /**
  * @see Ingot_JQuery_JqGrid_Plugin_Abstract

@@ -1,18 +1,18 @@
 <?php
 
-namespace Bf\JqGrid\JqGrid\Adapter;
+namespace BfJqGrid\JqGrid\Adapter;
 
-use Bf\JqGrid\JqGrid\Adapter\Sql\Predicate\NotContains;
-use Bf\JqGrid\JqGrid\Adapter\Sql\Predicate\Contains;
-use Bf\JqGrid\JqGrid\Adapter\Sql\Predicate\NotEndWith;
-use Bf\JqGrid\JqGrid\Adapter\Sql\Predicate\NotBeginsWith;
-use Bf\JqGrid\JqGrid\Adapter\Sql\Predicate\NotEndWithLike;
-use Bf\JqGrid\JqGrid\Adapter\Sql\Predicate\EndsWith;
-use Bf\JqGrid\JqGrid\Adapter\Sql\Predicate\BeginsWith;
+use BfJqGrid\JqGrid\Adapter\Sql\Predicate\NotContains;
+use BfJqGrid\JqGrid\Adapter\Sql\Predicate\Contains;
+use BfJqGrid\JqGrid\Adapter\Sql\Predicate\NotEndWith;
+use BfJqGrid\JqGrid\Adapter\Sql\Predicate\NotBeginsWith;
+use BfJqGrid\JqGrid\Adapter\Sql\Predicate\NotEndWithLike;
+use BfJqGrid\JqGrid\Adapter\Sql\Predicate\EndsWith;
+use BfJqGrid\JqGrid\Adapter\Sql\Predicate\BeginsWith;
 use Zend\Db\Sql\Where;
 use Zend\Paginator\Adapter\DbSelect;
-use Bf\JqGrid\JqGrid;
-use Bf\JqGrid\JqGrid\Adapter\Sql\Predicate;
+use BfJqGrid\JqGrid;
+use BfJqGrid\JqGrid\Adapter\Sql\Predicate;
 use Zend\Paginator\Adapter;
 use Zend\Db\Sql\Predicate\PredicateSet;
 

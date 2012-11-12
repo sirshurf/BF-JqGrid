@@ -1,9 +1,9 @@
 <?php
 
-namespace Bf\JqGrid\JqGrid\Plugin\Row;
+namespace BfJqGrid\JqGrid\Plugin\Row;
 
-use Bf\JqGrid\JqGrid;
-use Bf\JqGrid\JqGrid\Plugin;
+use BfJqGrid\JqGrid;
+use BfJqGrid\JqGrid\Plugin;
 
 
 /**

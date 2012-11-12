@@ -14,7 +14,7 @@
  * made by many individuals and is licensed under the MIT license. For more
  * information, see <http://www.doctrine-project.org>.
  */
-namespace Bf\JqGrid;
+namespace BfJqGrid;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\InitProviderInterface;
@@ -24,7 +24,7 @@ use Zend\ModuleManager\ModuleManagerInterface;
 use Zend\Loader\AutoloaderFactory;
 use Zend\Loader\StandardAutoloader;
 
-use Bf\JqGrid\View\Helper;
+use BfJqGrid\View\Helper;
 
 /**
  * Base module for integration of Doctrine projects with ZF2 applications
@@ -63,7 +63,7 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface,
 	public function getServiceConfig() {
 		return array (
 				'factories' => array (
-						'Bf\JqGrid\View\Helper\JqGrid' => function ($sm) {
+						'BfJqGrid\View\Helper\JqGrid' => function ($sm) {
 							$viewHelper = new View\Helper\JqGrid();
 							return $viewHelper;
 						} 

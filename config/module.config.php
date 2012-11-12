@@ -12,8 +12,8 @@ return array (
 		),
 		'view_helpers' => array (
 				'invokables' => array (
-						'JqGridHelper' => 'Bf\JqGrid\View\Helper\JqGridHelper',
-						'jqgridhelper' => 'Bf\JqGrid\View\Helper\JqGridHelper' 
+						'JqGridHelper' => 'BfJqGrid\View\Helper\JqGridHelper',
+						'jqgridhelper' => 'BfJqGrid\View\Helper\JqGridHelper' 
 				) 
 		)
 		 

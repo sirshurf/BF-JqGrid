@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Bf\JqGrid\View\Helper;
+namespace BfJqGrid\View\Helper;
 
 use Zend\View\Helper\ViewModel;
 
 use Zend\View\Helper\AbstractHelper;
-use Bf\JqGrid\JqGrid;
+use BfJqGrid\JqGrid;
 
 /**
  * JqGrid View Helper

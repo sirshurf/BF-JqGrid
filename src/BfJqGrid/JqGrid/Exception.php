@@ -1,6 +1,6 @@
 <?php
 
-namespace Bf\JqGrid\JqGrid;
+namespace BfJqGrid\JqGrid;
 
 class Exception extends \Exception
 {

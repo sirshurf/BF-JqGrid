@@ -1,8 +1,8 @@
 <?php
 
-namespace Bf\JqGrid\JqGrid\Plugin;
+namespace BfJqGrid\JqGrid\Plugin;
 
-use Bf\JqGrid\JqGrid;
+use BfJqGrid\JqGrid;
 
 /**
  * Display a pagination interface on grid for navigating through pages,

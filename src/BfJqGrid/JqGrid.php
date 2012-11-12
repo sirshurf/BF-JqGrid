@@ -13,15 +13,15 @@
  * @author Andy Roberts
  */
 
-namespace Bf\JqGrid\JqGrid;
+namespace BfJqGrid\JqGrid;
 
 use Zend\View\Model\JsonModel;
 
 use Zend\Paginator\Paginator;
 
-use Bf\JqGrid\JqGrid\Plugin;
-use Bf\JqGrid\JqGrid\Adapter as BfAdapter;
-use Bf\JqGrid\View\Helper as BfHelper;
+use BfJqGrid\JqGrid\Plugin;
+use BfJqGrid\JqGrid\Adapter as BfAdapter;
+use BfJqGrid\View\Helper as BfHelper;
 use Zend\Json;
 use Zend\View\Model;
 use Zend\Http\Request;
@@ -108,7 +108,7 @@ class JqGrid {
 	 * @var unknown_type
 	 */
 	protected $_plugins;
-	protected $_pagerClass = 'Bf\JqGrid\JqGrid\Plugin\Pager';
+	protected $_pagerClass = 'BfJqGrid\JqGrid\Plugin\Pager';
 	public static $arrEvents = array("afterShowForm", "unformat", "dataInit", "beforeShowForm", "afterSubmit", "afterInsertRow", "beforeRequest", "beforeSelectRow", "gridComplete", "loadBeforeSend", "loadComplete", "loadError", "onCellSelect", "ondblClickRow", "onHeaderClick", "onPaging", "onRightClickRow", "onSelectAll", "onSelectRow", "onSortCol", "resizeStart", "resizeStop", "serializeGridData");
 	public static $arrCallbacks = array("custom_func");
 	private $_boolCustomJson = false;
