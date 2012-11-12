@@ -1,0 +1,22 @@
+{
+    "name": "BF/JqGrid",
+    "description": "Zend Framework 2 Module that provides Doctrine basic functionality required for ORM and ODM modules",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "JqGrid",
+        "module",
+        "zf2"
+    ],
+    "homepage": "http://www.doctrine-project.org/",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.*"
+    },
+    "minimum-stability": "alpha",
+    "autoload": {
+        "psr-0": {
+            "JqGrid\\": "src/"
+        }
+    }
+}
