@@ -1,22 +1,33 @@
 {
-    "name": "BF/JqGrid",
-    "description": "Zend Framework 2 Module that provides Doctrine basic functionality required for ORM and ODM modules",
+    "name": "Bf/JqGrid",
+    "description": "An implementation for JqGrid for ZF2. Included wokring CRUD module.",
     "type": "library",
-    "license": "MIT",
     "keywords": [
-        "JqGrid",
-        "module",
-        "zf2"
+        "zf2", "JqGrid"
     ],
-    "homepage": "http://www.doctrine-project.org/",
+    "homepage": "https://github.com/sirshurf/BF-JqGrid",
+    "authors": [
+        {
+            "name": "Alex Frenkel",
+            "email": "alex@frenkel-online.com",
+            "homepage": "http://alex.frenkel-online.com/"
+        },
+        {
+            "name": "Alex Sherman",
+            "email": "alex@belleron.com",
+            "homepage": "http://www.belleron.com/"
+        }
+    ],
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*"
     },
-    "minimum-stability": "alpha",
     "autoload": {
         "psr-0": {
-            "JqGrid\\": "src/"
-        }
+            "Bf/JqGrid": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
     }
 }
