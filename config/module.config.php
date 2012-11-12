@@ -4,7 +4,7 @@ return array (
 		'jqgrid' => array (),
 		'view_manager' => array (
 				'template_path_stack' => array (
-						'JqGrid' => __DIR__ . '/../view' 
+						'BfJqGrid' => __DIR__ . '/../view' 
 				),
 				'strategies' => array (
 						'ViewJsonStrategy' 
