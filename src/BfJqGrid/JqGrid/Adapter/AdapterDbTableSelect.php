@@ -70,19 +70,19 @@ class AdapterDbTableSelect extends AdapterDbSelect {
 					$idValue = $objRequest->getPost ( 'id' );
 					
 					if (! empty ( $idValue )) {
-						$where = new Where ();
-						$where->equalTo ( $objGrid->getIdCol (), $idValue );
-						
-						$result = $objGrid->getTableGatevay ()->delete ( $where );
-						if (! empty ( $result )) {
+						try {
+							$where = new Where ();
+							$where->equalTo ( $objGrid->getIdCol (), $idValue );
+							
+							$result = $objGrid->getTableGatevay ()->update ( $this->filterDatabaseColumns ( $objGrid ), $where );
 							$arrData = array (
 									"code" => "ok",
 									"msg" => "" 
 							);
-						} else {
+						} catch ( \Exception $objE ) {
 							$arrData = array (
 									"code" => "error",
-									"msg" => "LBL_UPDATE_FAIL" 
+									"msg" => $objE->getMessage () 
 							);
 							$boolError = true;
 						}
