@@ -70,19 +70,19 @@ class AdapterDbTableSelect extends AdapterDbSelect {
 					$idValue = $objRequest->getPost ( 'id' );
 					
 					if (! empty ( $idValue )) {
-						try {
-							$where = new Where ();
-							$where->equalTo ( $objGrid->getIdCol (), $idValue );
-							
-							$result = $objGrid->getTableGatevay ()->update ( $this->filterDatabaseColumns ( $objGrid ), $where );
+						$where = new Where ();
+						$where->equalTo ( $objGrid->getIdCol (), $idValue );
+						
+						$result = $objGrid->getTableGatevay ()->delete ( $where );
+						if (! empty ( $result )) {
 							$arrData = array (
 									"code" => "ok",
 									"msg" => "" 
 							);
-						} catch ( \Exception $objE ) {
+						} else {
 							$arrData = array (
 									"code" => "error",
-									"msg" => $objE->getMessage () 
+									"msg" => "LBL_UPDATE_FAIL" 
 							);
 							$boolError = true;
 						}
@@ -99,21 +99,19 @@ class AdapterDbTableSelect extends AdapterDbSelect {
 					$idValue = $objRequest->getPost ( 'id' );
 					
 					if (! empty ( $idValue )) {
-						
-						$where = new Where ();
-						$where->equalTo ( $objGrid->getIdCol (), $idValue );
-						
-						$result = $objGrid->getTableGatevay ()->update ( $this->filterDatabaseColumns ( $objGrid ), $where );
-						
-						if (! empty ( $result )) {
+						try {
+							$where = new Where ();
+							$where->equalTo ( $objGrid->getIdCol (), $idValue );
+								
+							$result = $objGrid->getTableGatevay ()->update ( $this->filterDatabaseColumns ( $objGrid ), $where );
 							$arrData = array (
 									"code" => "ok",
-									"msg" => "" 
+									"msg" => ""
 							);
-						} else {
+						} catch ( \Exception $objE ) {
 							$arrData = array (
 									"code" => "error",
-									"msg" => "LBL_UPDATE_FAIL" 
+									"msg" => $objE->getMessage ()
 							);
 							$boolError = true;
 						}
