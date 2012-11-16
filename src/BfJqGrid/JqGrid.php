@@ -557,10 +557,12 @@ class JqGrid {
 // 			\Zend\Debug\Debug::dump($row);
 // 			exit();
 			$strIdCol = $this->getIdCol();
-			if (! empty($strIdCol)) {
+			if (! empty($strIdCol) && !empty($row[$strIdCol])) {
 				$grid['rows'][$intCounter]['id'] = htmlspecialchars($row[$strIdCol]);
 			} elseif (isset($row['id'])) {
 				$grid['rows'][$intCounter]['id'] = htmlspecialchars($row['id']);
+			} else {
+				$grid['rows'][$intCounter]['id'] = $k;
 			}
 			$grid['rows'][$intCounter]['cell'] = array();
 			foreach ($this->_columns as $column) {
